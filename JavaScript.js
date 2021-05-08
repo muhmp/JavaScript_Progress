@@ -18,3 +18,21 @@ var c = "I am a";
 a = a + 1;
 b = b + 5;
 c = c + " String!";
+
+//Addition
+var add = 10+10;
+//substraction
+var sub = 20-10;
+//multiplication
+var mul = 10*8;
+//division
+var div = 66/33;
+
+//increment
+var inc = 87;
+inc++;
+
+//decrement
+var inc1 = 87;
+inc1--;
+
