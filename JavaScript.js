@@ -116,3 +116,75 @@ var anAdjective = "awesome!";
 var ourStr = "freeCodeCamp is ";
 ourStr += anAdjective;
 console.log(anAdjective)
+
+//Appending variables to Strings
+var someAdjective = "Hey";
+var myAdd = "Learning to code is ";
+myAdd += someAdjective;
+
+//Find the Length of a String
+// Setup
+var lastNameLength = 0;
+var lastName = "Lovelace";
+// Only change code below this line
+lastNameLength = lastName.length;
+
+
+
+//Use a Bracket notation to find the Character in a String
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0]
+
+
+//String Immutability
+// Setup
+var StrImm = "Jello World";
+//Changing to hello world
+StrImm = "Hello World";
+StrImm[0]; // Apply H 
+
+//Bracket for finding the last character of the String
+// Setup
+var lastName = "Lovelace";
+var lastLetterOfLastName = lastName[lastName.length-1];
+
+//Bracket for finding Nth of the String
+var lastName1 = "Lovelace";
+var secondToLastLetterOfLastName = lastName1[lastName1.length - 2]; // Output will be C
+
+//worldblank
+//define variables of wordblanks
+var myNoun = "dog";
+var myAdjective = "big";
+var myVerb = "ran";
+var myAdverb = "quickly";
+//combine the word blanks
+var wordBlanks = "The " + myAdjective + " " + myNoun +" " + myVerb + " " + myAdverb + "." ; //
+
+//Store array (String)
+//define array
+var arrWord = ["Food", 2];
+
+//nested array
+var myArray = [["Length",120],["Height", 170]];
+
+//access array
+var accArray = [50,60,70];
+accArray[0];
+var myData = accArray[0]; // access the first array on new variable
+
+//changing the array value
+var accArray1 = [18,24,32];
+accArray1[0] = 13 // change the value of the first array to 13
+
+//multi dimensional array
+var mulArr = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+var mulData = mulArr [3][2];
+console.log(mulData);
+
+//manipulate array .push() function
+vararrPush = [["John", 23], ["cat", 2]];
+vararrPush.push(["dog",3]);
