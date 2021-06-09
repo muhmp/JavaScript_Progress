@@ -1,10 +1,7 @@
+/**/
 console.log('Hello World');
 console.error('This is an Error');
 console.warn("This is a Warning");
-/*console/
-alert
-clear
-*/
 
 
 /*1.Variables in JavaScript
@@ -81,3 +78,21 @@ console.log(fruits.indexOf('oranges'));
 console.log(fruits[1]); // [] : read the value from the array
 console.log(fruits); // adding more value to array 
 
+
+//object array
+
+const person = {
+    firstName: 'Matt',
+    lastName: 'John',
+    age: 25,
+    hobbies: ['football', 'music','travel','photography'],
+    Address: 'Japan',
+    City :  'Fukuoka'
+}
+
+console.log(person);
+console.log(person.hobbies , 'His name is: '+ person.firstName, person.lastName);
+console.log(person.hobbies[0]);//print the value inside
+
+person.email = 'matt@gmail.com';
+console.log(person);
