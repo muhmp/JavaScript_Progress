@@ -59,7 +59,7 @@ console.log(s.split(''));// Split each string to see detail of each string
 const t = 'technology , computers , it , code';
 console.log(t.split(' , ')); // split each string
 
-//Arrays : variables that hold multiple values
+//3.Arrays : variables that hold multiple values
 
 const num = new Array(1,2,3,4,5); //new Array() : Constructor
 
@@ -96,3 +96,53 @@ console.log(person.hobbies[0]);//print the value inside
 
 person.email = 'matt@gmail.com';
 console.log(person);
+
+//create a todo list example 
+const todos = [
+    {
+        id: 1,
+        text:'Japanese class',
+        isBoolean:true//boolean condition
+    },
+    {
+        id:2,
+        text:'Cooking',
+        isBoolean:true//
+    },
+    {
+        id:3,
+        text:'Cleaning',
+        isBoolean:false
+    }
+];
+
+//For example using JSON: usually used for sending information to server
+//convert to JSON
+const todoJSON = JSON.stringify(todos); //to create json
+console.log(todoJSON);
+
+
+//4.For loop
+
+//for example
+for(let i = 0; i<10;i++){ //,Initial, , condition, i++ increment
+    console.log(`number:  ${i}`);
+}
+
+//example display the text from the variable
+//print the value of the text
+for (let i = 0 ; i< todos.length ; i ++ ){
+    console.log(todos[i].text);//todos[i]: print every value of the i
+}
+
+//another example
+for (let activity of todos ){ // of : from the value
+    console.log(activity.text);
+}
+
+//for each, map, filter : high order array
+
+//for each
+todos.forEach(function(todo){
+    console.log(todo.text);
+});
