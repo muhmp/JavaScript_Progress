@@ -195,7 +195,7 @@ if (z1 > 4 && z2 > 2){
     console.log ("Both value are greater ");
 }
 
-//eterary operation
+//another operation
 const col = 10; // const col = 11;
 
 const color = col > 10 ? 'red': 'blue'; // if value equal it will choose the opposite answer but if the value is not equal it will answer the first statement
@@ -203,3 +203,10 @@ const color = col > 10 ? 'red': 'blue'; // if value equal it will choose the opp
 
 console.log(color);
 
+
+//function
+
+function addNum (num1,num2){
+    return sumNum = num1 + num2;
+}
+console.log(addNum(5,5));
