@@ -163,3 +163,43 @@ const todoCompleted = todos.filter(function(todo){
 console.log(todoCompleted);
 //question for writing the function method of the bracket problem
 
+
+//5.If statement
+//const x = 10; // even you define it with x = '10' is still equal using == in if statement
+const x = 20;
+if (x == 10){
+    //=== (Triple equals) is a strict equality comparison operator in JavaScript, which returns false for the values which are not of a similar type. This operator performs type casting for equality. If we compare 2 with "2" using ===, then it will return a false value.
+    console.log('x is : '+ x);
+} else {
+    console.log('value is not true')
+} 
+
+//else if
+const y = 20;
+if (y === 10){
+    console.log('value is: ' + y);
+} else if (y>10) {
+    console.log('The value is greater  ');
+} else {
+    console.log ('The value is smaller');
+}
+
+
+//another example using if statement
+const z1 = 5;
+const z2 = 3;
+//logic
+// || :or
+// &&: and
+if (z1 > 4 && z2 > 2){
+    console.log ("Both value are greater ");
+}
+
+//eterary operation
+const col = 10; // const col = 11;
+
+const color = col > 10 ? 'red': 'blue'; // if value equal it will choose the opposite answer but if the value is not equal it will answer the first statement
+//const color = col > 10 ? 'red': 'blue'; // if value equal it will choose the opposite answer but if the value is not equal it will answer the first statement
+
+console.log(color);
+
