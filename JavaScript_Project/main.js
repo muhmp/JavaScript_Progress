@@ -102,17 +102,17 @@ const todos = [
     {
         id: 1,
         text:'Japanese class',
-        isBoolean:true//boolean condition
+        isCompleted:true//boolean condition
     },
     {
         id:2,
         text:'Cooking',
-        isBoolean:true//
+        isCompleted:true//
     },
     {
         id:3,
         text:'Cleaning',
-        isBoolean:false
+        isCompleted:false
     }
 ];
 
@@ -146,3 +146,20 @@ for (let activity of todos ){ // of : from the value
 todos.forEach(function(todo){
     console.log(todo.text);
 });
+
+//using map: to print specified
+const todoText = todos.map(function(todo){
+    return todo.text; //return
+});
+console.log(todoText); //calling from the function
+
+//filter
+const todoCompleted = todos.filter(function(todo){
+   return todo.isCompleted == true;
+        }).map(function(todo){
+             return todo.text;
+        })
+
+console.log(todoCompleted);
+//question for writing the function method of the bracket problem
+
