@@ -210,3 +210,18 @@ function addNum (num1,num2){
     return sumNum = num1 + num2;
 }
 console.log(addNum(5,5));
+
+
+//constructor function
+function Bio( firstName, lastName, birth){//()parameter
+this.firstName = firstName; //properties of the object
+this.lastName = lastName;
+this.birth = new Date(birth); // set birth
+}
+
+//Instantiate object
+const person1 = new Bio('muh','mappanyompa','15-11-1995');
+const person2 = new Bio('muhammad','mp','5/11/1995');
+
+//display
+console.log(person1.birth.getFullYear());
