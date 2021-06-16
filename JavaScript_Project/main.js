@@ -212,11 +212,40 @@ function addNum (num1,num2){
 console.log(addNum(5,5));
 
 
+/*
 //constructor function
 function Bio( firstName, lastName, birth){//()parameter
-this.firstName = firstName; //properties of the object
-this.lastName = lastName;
-this.birth = new Date(birth); // set birth
+    this.firstName = firstName; //properties of the object
+    this.lastName = lastName;
+    this.birth = new Date(birth); // set birth
+}
+
+//define with prototype
+Bio.prototype.getBirthYear = function(){
+    return this.birth.getFullYear();
+}
+
+Bio.prototype.getFullName = function () {
+    return `${this.firstName} ${this.lastName}`;
+}
+*/
+
+
+//Class
+class Bio{
+    constructor(firstName, lastName, birth){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birth = new Date(birth);
+    }
+
+    getBirthYear(){
+        return this.birth.getFullYear();
+    }
+
+    getFullName(){
+        return `${this.firstName}, ${this.lastName}`;
+    }
 }
 
 //Instantiate object
@@ -224,5 +253,6 @@ const person1 = new Bio('muh','mappanyompa','15-11-1995');
 const person2 = new Bio('muhammad','mp','5/11/1995');
 
 //display
-console.log(person1.getFullName());
-console.log(person1);
+//console.log(person1.getFullName());
+console.log (person2.getFullName());
+console.log(person);
