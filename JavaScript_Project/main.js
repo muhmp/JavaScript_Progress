@@ -224,4 +224,5 @@ const person1 = new Bio('muh','mappanyompa','15-11-1995');
 const person2 = new Bio('muhammad','mp','5/11/1995');
 
 //display
-console.log(person1.birth.getFullYear());
+console.log(person1.getFullName());
+console.log(person1);
