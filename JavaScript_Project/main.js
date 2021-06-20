@@ -256,3 +256,8 @@ const person2 = new Bio('muhammad','mp','5/11/1995');
 //console.log(person1.getFullName());
 console.log (person2.getFullName());
 console.log(person);
+
+
+
+//making form using javascript
+
