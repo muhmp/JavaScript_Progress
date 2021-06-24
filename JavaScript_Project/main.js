@@ -277,3 +277,26 @@ console.log(person);
 
 
 //making form using javascript
+//modify list
+const ul = document.querySelector('.items'); //load query of the items list in HTML file
+
+ 
+ul.firstElementChild.textContent = 'Hello'; 
+ul.children[1].innerText = 'Matt'; //other way
+ul.lastElementChild.innerHTML = '<h1>Hello</h1>'; //dynamic way
+
+
+
+//button customization
+const btn = document.querySelector('.btn');
+//btn.style.background = 'red'; //customize color of the button
+
+btn.addEventListener('click',(e) => { // ('click',(e): when click:-> run the function
+    e.preventDefault(); //
+    //console.log('click'); //display click on console 
+    //console.log(e);  //display element of MouseEvent
+    //console.log(e.target.className);  //the name of the defined variable from HTML
+    document.querySelector('#my-form').style.background = '#ccc';//customize background if click
+    document.querySelector('body').classList.add('bg-dark'); //load bg-dark body from modified css
+    document.querySelector('.items').lastElementChild.innerHTML = '<h1>Hello</h1>';
+});
