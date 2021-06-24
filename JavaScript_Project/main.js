@@ -258,6 +258,22 @@ console.log (person2.getFullName());
 console.log(person);
 
 
+//console.log(window);
+//alert(1);
+
+
+//Load element
+//single element
+//console.log(document.getElementById('my-form'));/* getElementById from window function. load my-form from HTML file */
+//console.log(document.querySelector('h1'));//load h1 from HTML
+
+//multiple element
+//console.log(document.querySelectorAll('.item'));
+//console.log(document.getElementsByClassName('item'));
+//console.log(document.getElementsByTagName('li'));
+
+
+
+
 
 //making form using javascript
-
