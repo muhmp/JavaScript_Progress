@@ -275,7 +275,7 @@ console.log(person);
 
 
 
-
+/*
 //making form using javascript
 //modify list
 const ul = document.querySelector('.items'); //load query of the items list in HTML file
@@ -284,9 +284,9 @@ const ul = document.querySelector('.items'); //load query of the items list in H
 ul.firstElementChild.textContent = 'Hello'; 
 ul.children[1].innerText = 'Matt'; //other way
 ul.lastElementChild.innerHTML = '<h1>Hello</h1>'; //dynamic way
+ */
 
-
-
+/*
 //button customization
 const btn = document.querySelector('.btn');
 //btn.style.background = 'red'; //customize color of the button
@@ -300,3 +300,37 @@ btn.addEventListener('click',(e) => { // ('click',(e): when click:-> run the fun
     document.querySelector('body').classList.add('bg-dark'); //load bg-dark body from modified css
     document.querySelector('.items').lastElementChild.innerHTML = '<h1>Hello</h1>';
 });
+ */
+
+
+//form function
+
+const myForm = document.querySelector('#my-form');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const msg = document.querySelector('.msg');
+const userList = document.querySelector('#users');
+
+//submit function
+myForm.addEventListener('submit', onSubmit);
+
+function onSubmit(e){
+    e.preventDefault();
+
+    if(nameInput.value === '' || emailInput.value === ''){ //if both form input true
+        msg.classList.add('error');
+        msg.innerHTML = 'Please enter all fields';
+
+        setTimeout(() => msg.remove(),3000); //set time , 3000: 3 s 
+    } else{
+        const li = document.createElement('li');
+        console.log('success');
+        li.appendChild(document.createTextNode(`${nameInput.value}:${emailInput.value}`));
+
+        userList.appendChild(li);
+
+        //clear fields
+        nameInput.value = '';
+        emailInput.value = '';
+    }
+}
