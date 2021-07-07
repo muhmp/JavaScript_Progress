@@ -1,4 +1,4 @@
-/**/
+/* source from Traversy Media*/
 console.log('Hello World');
 console.error('This is an Error');
 console.warn("This is a Warning");
@@ -22,7 +22,7 @@ b=4;
 console.log(b);
 
 
-/*Data typee in JS*/
+/*Data type in JS*/
 /*String, Numbers, Boolean, Null, undefined,
 
 const name = 'Matt';//string
@@ -78,6 +78,10 @@ console.log(fruits.indexOf('oranges'));
 console.log(fruits[1]); // [] : read the value from the array
 console.log(fruits); // adding more value to array 
 
+
+//another array
+const people = ['person 1 ', 'person 2', 'person 3'];
+console.log(people); //print people
 
 //object array
 
@@ -209,7 +213,23 @@ console.log(color);
 function addNum (num1,num2){
     return sumNum = num1 + num2;
 }
-console.log(addNum(5,5));
+console.log(addNum(6,5));
+
+
+//another function
+var sum = 0;
+function addThree(){ 
+    return sum = sum + 3;//add three
+}
+function addFive(){
+    return sum = sum + 5;
+}
+
+//calling the function
+console.log(addThree());
+console.log(addFive());
+
+
 
 
 /*
