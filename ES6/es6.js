@@ -84,3 +84,24 @@ console.log(myConcat([1, 2], [3, 4, 5]));
 const noArguments = () => "No arguments"; //return string
 //const oneArgument = item1 = "One arguments" + item1;
 //const twoArgument = (item1, item2) = "two arguments" + item1 + item2;
+
+
+//increment using arrow
+const increment = (number, value = 1) => number + value;
+
+console.log(increment(5,2));//print 7
+console.log(increment(5));// if there is no value added on the next parameter it will be added in the value from the defined parameter
+
+
+//Rest parameter (...args)
+/*at first
+const sum = (...args) => {
+  const args = [x, y, z];
+  return args.reduce((a, b) => a + b, 0);
+}
+*/
+//map() ,filter().reduce()
+const sum = (...args) => {
+    return args.reduce((a,b) => a+b,0); //return
+}
+console.log(sum(1,2,3,4,56,789));
