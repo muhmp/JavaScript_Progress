@@ -45,3 +45,42 @@ function editInPlace(){
     s[2] = 7;
 }
     editInPlace();
+
+//prevent mutation by using freeze
+function freezeObj() {
+    const MATH_CONSTANTS = {
+      PI: 3.14
+    };
+    // Only change code below this line
+    Object.freeze(MATH_CONSTANTS);
+  
+    // Only change code above this line
+    try {
+      MATH_CONSTANTS.PI = 99;
+    } catch(ex) {
+      console.log(ex);
+    }
+    return MATH_CONSTANTS.PI;
+  }
+  const PI = freezeObj();
+
+
+  //Arrow function with parameter in JavaScript: short to return
+  //normal function
+  var magic = () => {
+      "use strict";
+      return new Date();
+  }
+
+  //using arrow
+var trick = () => new Date(); // date
+console.log(trick());
+
+// another example
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+//another example
+const noArguments = () => "No arguments"; //return string
+//const oneArgument = item1 = "One arguments" + item1;
+//const twoArgument = (item1, item2) = "two arguments" + item1 + item2;
