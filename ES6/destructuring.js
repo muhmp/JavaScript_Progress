@@ -30,3 +30,17 @@ const LOCAL_FORECAST = {
 //destructuring -> {property:{subproperty:value}} = Variable
 const {today2:{low:lowToday, high:highToday1}} = LOCAL_FORECAST;
 console.log("Weather is: ", highToday1); // load the value
+
+//destructuring variables from arrays
+//basic swap techniques
+/*
+let temporary = a;
+a=b;
+b=temporary;
+ */
+let a = 8, b=6;
+[a,b] = [b,a]; //swap
+
+//other example
+const[x,y,,, z] = [1,2,3,4,5,6]; //,,, will skip the next value 3 times
+console.log(x,y,z);
