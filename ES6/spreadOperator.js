@@ -31,16 +31,4 @@ console.log(today);
 console.log(tomorrow);
 
 
-//assingn variable to the object
-const HIGH_TEMPERATURES = {
-    yesterday1: 75,
-    today1: 77,
-    tomorrow1: 80
-  };
-  /*  hint
-const highToday = HIGH_TEMPERATURES.today;
-const highTomorrow = HIGH_TEMPERATURES.tomorrow; 
-*/
-//assign variable to the object
-const {today1:highToday , tomorrow1:highTomorrow} = HIGH_TEMPERATURES;
-console.log(highToday);
+
