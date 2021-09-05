@@ -12,7 +12,6 @@ console.log(catTalk(quote));
 
 
 //let:  limited to that block, statement, or expression.
-
 function checkScope() {
     let i = 'function scope';
     if (true) {
@@ -24,6 +23,7 @@ function checkScope() {
   }
   
 
+//using const
 //const CAPITAL LETTER
 function printManyTimes(str){
     const SENTENCE = str + " is cool!";
@@ -105,3 +105,4 @@ const sum = (...args) => {
     return args.reduce((a,b) => a+b,0); //return
 }
 console.log(sum(1,2,3,4,56,789));
+
