@@ -44,3 +44,14 @@ let a = 8, b=6;
 //other example
 const[x,y,,, z] = [1,2,3,4,5,6]; //,,, will skip the next value 3 times
 console.log(x,y,z);
+
+
+//destructive assignment with rest parameter to reassign array
+const source = [1,2,3,4,5,6,7,8,9,10]; //define source
+const arr = removeFirstTwo(source); // variable stored in from
+//create function
+function removeFirstTwo(list){
+  const [,, ...arr] = list; //remove first two and keep the rest
+  return arr;
+}
+console.log(arr);

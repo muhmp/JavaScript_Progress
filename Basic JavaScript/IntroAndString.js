@@ -163,3 +163,7 @@ var myVerb = "ran";
 var myAdverb = "quickly";
 //combine the word blanks
 var wordBlanks = "The " + myAdjective + " " + myNoun +" " + myVerb + " " + myAdverb + "." ; //
+
+
+//define 
+const generateNum = generate(num);
