@@ -1,3 +1,19 @@
+
+//Rest parameter (...args)
+/*at first
+const sum = (...args) => {
+  const args = [x, y, z];
+  return args.reduce((a, b) => a + b, 0);
+}
+*/
+//map() ,filter().reduce()
+const sum = (...args) => {
+    return args.reduce((a,b) => a+b,0); //return
+}
+console.log(sum(1,2,3,4,56,789));
+
+
+
 //rest parameter function
 function sum(...theArgs){
     return theArgs.reduce((previous, current) => {
