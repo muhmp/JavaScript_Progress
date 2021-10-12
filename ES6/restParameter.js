@@ -20,7 +20,6 @@ function sum(...theArgs){
         return previous + current;
     });
 }
-
 //print
 console.log(sum(1,2,3));
 console.log(sum(1,2,3,4));
@@ -34,4 +33,11 @@ function multiply(multiplier, ...args){
 let arr = multiply(4,3,4,5); // Output (4*3 , 4*4 , 4*5)
 console.log(arr);
 
+
+/*Rest parameter with function */
+//define
+const restParam = (...args) =>{
+    return args.reduce((a,b) => a+b,0);
+}
+console.log(restParam(1,2,3,4)); //result of 1,2,3,4 should be 10
  

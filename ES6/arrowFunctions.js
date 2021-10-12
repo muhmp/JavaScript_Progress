@@ -8,8 +8,6 @@ console.log(sum(1,2));
 //exactly the same as the normal function as the top
 let sum2 = (a,b) => a+b //everything after the arrow assumed to be return
 
-
-
 //function with one parameter
 function isPositive(number){
     return number >= 0;
