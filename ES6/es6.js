@@ -93,4 +93,3 @@ console.log(increment(5,2));//print 7
 console.log(increment(5));// if there is no value added on the next parameter it will be added in the value from the defined parameter
 
 
-

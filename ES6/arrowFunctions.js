@@ -1,3 +1,7 @@
+/** using arrow function:
+ * define the variable, define the parameter, use arrow, write return
+ */
+
 //function with multiple parameter
 function sum(a,b){
     return a+b;
