@@ -93,3 +93,88 @@ console.log(increment(5,2));//print 7
 console.log(increment(5));// if there is no value added on the next parameter it will be added in the value from the defined parameter
 
 
+/**
+ * Use export to share a code block
+ */
+//example case
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
+
+const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
+
+export{uppercaseString};
+
+export{lowercaseString};
+
+
+/**
+ * Reuse Js code using import
+ */
+//example case
+import {uppercaseString, lowercaseString} from './string_functions.js'; // name of the function
+// Only change code above this line
+
+uppercaseString("hello");
+lowercaseString("WORLD!");
+
+/**
+ * use * to import everything from a file
+ */
+//example case
+import * as myMathModule from "./math_functions.js";
+myMathModule.add(2,3);
+myMathModule.substract(5,3);
+
+//example case
+import * as stringFunctions from "./string_functions.js";
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
+
+/**
+ * export default: if only one value is being exported from a file. 
+ */
+ export default function subtract(x, y) {
+  return x - y;
+}
+
+
+/**
+ * import default: 
+ */
+//example case
+import subtract from "./math_functions.js";
+// Only change code above this line
+
+subtract(7,4);
+
+/**
+ * Js promise: a constructor function to check the task completes
+ * create a promise variable with the parameter to return after.
+ * for example create a condition for if each condition that synchronize with the parameter
+ * 
+ */
+//define the promise with the parameter
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to true to represent a successful response from a server
+  let responseFromServer = true;
+    
+//create the condition every if
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+
+//handle a fulfilled using then
+  makeServerRequest.then(result => {
+    console.log(result)
+  })
+});
+
+//handle a rejected using catch
+makeServerRequest.catch(error => {
+  console.log(error);
+});
