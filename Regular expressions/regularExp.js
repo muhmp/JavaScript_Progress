@@ -231,4 +231,3 @@ let result = myRegex.test(myString); // check the value if the condition is true
    let hello = "   Hello, World!  ";
    let wsRegex = /^\s+|\s+$/g; // Change this line
    let result = hello.replace(wsRegex,""); // Change this line
-
