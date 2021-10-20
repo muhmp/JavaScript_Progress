@@ -1,15 +1,18 @@
-//while condition
-// Setup
-var myArray = [];
 
-// Only change code below this line
+
+/**
+ * While loop
+ */
+var myArray = [];
 var i= 0;
 while(i < 5){
   myArray.push(i); //adding the value
   i++; //increment with the while condition
 }
 
-//decrement
+/**
+ * decrement
+ */
 var decArr = [];
 var i=5;//define i
     while(i>=0){//condition
@@ -18,14 +21,17 @@ var i=5;//define i
     }
 console.log(decArr);
 
-
-// increment array
+/**
+ * increment array
+ */
 var incArr = [];
-// Only change code below this 
-for (var i=1 ; i<6 ; i++){
+  // Only change code below this 
+  for (var i=1 ; i<6 ; i++){
   incArr.push(i);
 }
-
+/**
+ * odd number 
+ */
 //odd number 1-9
 var oddArr = []; //initialize array
 //loop
@@ -52,6 +58,12 @@ for (var i =0; i<arrLength.length;i++){ //.length method is calling the value of
 console.log(total);
 
 
+/**
+ * 
+ * @param {*} arr 
+ * @returns
+ * multiply array 
+ */
 function multiplyAll(arr) {
     var product = 1;
 
@@ -71,11 +83,11 @@ console.log(product);
 //do while
 var doWhile = [];
 var x=10;
-do{
-    myArray.push(x);
-    x++;
-} while (x<5);
-console.log(x, myArray);
+    do{
+      myArray.push(x);
+      x++;
+    } while (x<5);
+    console.log(x, myArray);
 
 
 //recursion
@@ -132,3 +144,16 @@ function lookUpProfile(name, prop) {
 //accessing the data
 var data = lookUpProfile("Akira", "likes");
 console.log(data);
+
+
+/**
+ * using loop to print array (usual)
+ */
+  var loopArr=[]; //define array
+  for(var i = 0 ; i<=10;i++){
+    console.log(i); // if you wanted to show all the value
+    //loopArr++; //if you wanted to print the results by incrementing the value
+  }
+  //console.log(loopArr);
+
+ 
