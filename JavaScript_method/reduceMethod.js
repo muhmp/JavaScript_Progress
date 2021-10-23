@@ -1,3 +1,6 @@
+/**
+ * reduce(): to return the sum of all the elements in an array.
+ */
 const arr1 = [1,2,3,4];
 const reducer = (prevValue, nextValue) => prevValue + nextValue;
 

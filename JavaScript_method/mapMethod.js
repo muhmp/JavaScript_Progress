@@ -1,3 +1,7 @@
+/**
+ * Map function
+ */
+
 const arr = [1,4,5,6,7];
 
 //pass a function to map
