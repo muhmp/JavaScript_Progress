@@ -7,7 +7,7 @@ document.querySelector("form#addItem").addEventListener("submit", (e) => {
   if (!input.get("item")) return;
   const item = input.get("item").trim();
   if (items.includes(item)) {
-    alert("dupilicate item");
+    alert("duplicate item");
     return;
   }
   items.push(item);

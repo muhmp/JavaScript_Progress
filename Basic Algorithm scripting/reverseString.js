@@ -23,7 +23,7 @@ console.log(reverseString('Hello'));
 function reverseString2(str) {
     return str.split("").reverse().join("");
 }
-console.log(reverseString2("Testing"));
+console.log(reverseString2("Testing name"));
 
 
 
