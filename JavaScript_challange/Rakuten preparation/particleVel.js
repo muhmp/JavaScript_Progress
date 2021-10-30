@@ -19,7 +19,7 @@
      return total_periods < 1000000000 ? total_periods : -1;
  }
  console.log(particleVelocity([-1,1,3,3,3,2,3,2,1,0]));
-  */
+ */
 
  /**
  const rl = readline.createInterface(process.stdin);
@@ -43,32 +43,44 @@
   *     
   */
 
- /**
+ 
  function solution(N){ // particle
     //define velocity
-    let arrN = [];
+    let totalVelocity = 0;
     const parArr = N.length; //define the length of the 
     
-    for(let i = 0 ; i<=arrN;i++){ //for every array of particle example [-1,0,1,3,...]
-        console.log(arrN[i]);
+    for(let i = 0 ; i<parArr;i++){ //for every array of particle example [-1,0,1,3,...]
+        for (let j=0;i+2<parArr&&N[i+1]-N[i] === N[i+2] - N[i+1]; i++){
+            j++;
+            totalVelocity +=j;
+        }
 
     }
-    return arrN;
+    return totalVelocity;
 
  }
- console.log(solution([-1,1,3,3,3,2,3,2,1,0]));
-  */
+
+ //total velocity
+ console.log(solution([1,3,5,7,9]));
+  
 
 
  /**
   * print normal array
+
+
+
+//solution 2
+function largeInside(num){//get the parameter inside the for loop
+    //define array
+    let results = [];
+    for(let i=0;i<num.length;i++){
+        //define compared number using array
+        let compareNum = num[i];
+        results[i] = compareNum; //get the value equal to the array
+    }
+    return results;
+}
+
+console.log(largeInside([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
   */
- function normalArr(arr){
-     //define
-     let num = [];
-     for(let i = 0 ; i< arr.length; i++){
-         num += arr[i];
-     }
-     return num;
- }
- console.log(normalArr([2,3,4,1,4]));
