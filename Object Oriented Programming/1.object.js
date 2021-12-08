@@ -13,3 +13,10 @@ let dog = {
     name:"Inu",
     numLegs:4
 };
+
+let person = {
+    name:"matt",
+    address:'Fukuoka'
+}
+
+console.log(person);
