@@ -1,5 +1,5 @@
 
-//Functions
+/**Write Reusable JavaScript with Functions */
 function reusableFunction(){
     console.log("Hi World");
   }
@@ -8,12 +8,13 @@ function reusableFunction(){
   reusableFunction();
 
 
-//Passing values to functions with arguments
+/*Passing values to functions with arguments*/
 function functionWithArgs (a,b){
     console.log (a+b);
+    console.log (a*b);
 }
 //call the function
-functionWithArgs (1,2);
+functionWithArgs (5,2);
 
 
 //global scope variable
@@ -64,15 +65,15 @@ function myOutfit(){
 myOutfit(); //executing the function of myOutfit
 
 
-//return a value from function
+/** Return a Value from a Function with ReturnPassed */
 function timesFive (num){
   return num * 5;
 }
 var answer = timesFive(5);
 console.log(answer);
 
-// understanding undefined value returned from a function
-//Setup
+
+/** understanding undefined value returned from a function */
 var sum = 0;
 
 //add function1
@@ -89,8 +90,7 @@ addThree(); // in this case three didn't have a value and the result will be und
 addFive(5); // addFive function return a value contain results
 
 
-//assignment with a return value
-//Setup
+/** assignment with a return value*/
 var processed = 0;
 //pre-defined function
 function processArg(num){
@@ -100,8 +100,8 @@ function processArg(num){
 processed = processArg(7); // will proceed from pre-defined function first
 
 
-
-//stand in line used for queue in abstract data structure to kept items in order
+/**stand in line used for queue in abstract data structure to kept items in order
+ */
 //1. write a function which takes an array (arr) and a number (item) as arguments
 //2. add number to the end of the array
 //3. Remove the first element of the array
@@ -109,10 +109,11 @@ processed = processArg(7); // will proceed from pre-defined function first
 
 //create a function
 function nextInLine(arr,item){
-//processing the item
-arr.push(item); // add value
-testArr.shift();//
-return arr[0];
+    {//processing the item
+    arr.push(item); // add value
+    testArr.shift();//
+    return arr[0];
+  }
 }
 
 //setup

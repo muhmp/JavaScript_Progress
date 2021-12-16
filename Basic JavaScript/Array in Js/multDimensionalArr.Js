@@ -6,6 +6,12 @@ const arr = [
     [[10, 11, 12], 13, 14]
   ];
   
-  arr[3];
-  arr[3][0];
-  arr[3][0][1];
+  console.log(arr[3]); //print the third value element
+  console.log(arr[3][0]); // print the first of the third element
+  console.log(arr[3][0][1]); 
+
+
+/** Mult-dimensional array*/
+
+const x = [[2,3,4],[1,1,1],["Apple","Banana"]];
+console.log(x[2]); // print fruits
