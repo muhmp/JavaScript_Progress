@@ -3,7 +3,7 @@
  */
 
  //define variable
- let arrNum = [];
+ let arrNum = [20,10];
 
 //define function
 function largeNum(num){

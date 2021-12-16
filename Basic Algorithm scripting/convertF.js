@@ -3,6 +3,7 @@
  * Equation: (celsius * 9/5)+32;
  */
 
+/**
 //define function
 function convertF(celsius){
     //define the fahrenheit variable
@@ -10,4 +11,12 @@ function convertF(celsius){
     return fahrenheit;
 }
 //call the function
-console.log(convertF(2));
+console.log(convertF(2)); */
+
+
+/**practice */
+function convertF(celsius){
+    let fahrenheit = (celsius*9/5)+32;
+    return fahrenheit;
+}
+console.log(convertF(5));
