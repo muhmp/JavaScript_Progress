@@ -145,6 +145,7 @@ var StrImm = "Jello World";
 //Changing to hello world
 StrImm = "Hello World";
 StrImm[0]; // Apply H 
+console.log(StrImm)
 
 //Bracket for finding the last character of the String
 // Setup
@@ -165,5 +166,7 @@ var myAdverb = "quickly";
 var wordBlanks = "The " + myAdjective + " " + myNoun +" " + myVerb + " " + myAdverb + "." ; //
 
 
+/** 
 //define 
 const generateNum = generate(num);
+*/
