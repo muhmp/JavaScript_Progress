@@ -19,7 +19,7 @@ function reverseString(str){
 console.log(reverseString('Hello'));
 
 
-//Shorter way by combining all the method
+//method 2: Shorter way by combining all the method
 function reverseString2(str) {
     return str.split("").reverse().join("");
 }
@@ -28,7 +28,7 @@ console.log(reverseString2("Testing name"));
 
 
 
-//using decrementing loop
+//method 3: using decrementing loop
 function reverseWithLoop(text){
     //define string
     var reversedString = "";
