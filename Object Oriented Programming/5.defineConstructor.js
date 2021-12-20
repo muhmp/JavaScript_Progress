@@ -1,11 +1,48 @@
-function Dog() {
-    this.name = "Albert";
-    this.color = "blue";
-    this.numLegs = 4;
+/**example of constructor */
+function Dog(name, color) {
+  this.name = "Inu";
+  this.color = "Brown";
+  this.numLegs = 4;
+}
+let terrier = new Dog("terrier","red"); // constructor
+console.log(Dog)
+
+
+/**another example */
+class polygon {
+  constructor(){
+    this.name = "polygon";
+  }
+}
+
+const poly1 = new polygon();
+console.log(poly1.name);
+
+
+/**another example */
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  introduce() {
+    console.log(`Hello, my name is ${this.name}`);
   }
 
-/**
- * number 6
- */
-//create a constructor
-let hound = new Dog();
+}
+const otto = new Person('Otto');
+otto.introduce();
+
+
+/**another example */
+// Constructor function for Person objects
+function Person1(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+// Create a Person object
+const myFather = new Person1("John", "Doe", 50, "blue");
+console.log(myFather) //print all the information from the myFather variable
+console.log(myFather.firstName) // print the specific part

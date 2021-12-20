@@ -19,3 +19,12 @@
   }
   
   console.log(ownProps);
+
+
+
+/**another example */
+const obj1 = {};
+obj1.property1 = 42;
+//print
+console.log(obj1.hasOwnProperty('property1')); //expected true because the variable specified as it own
+console.log(obj1.hasOwnProperty('toString')); //expected false

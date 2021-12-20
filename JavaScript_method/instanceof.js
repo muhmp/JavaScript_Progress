@@ -10,7 +10,7 @@ function Car(make, model, year) {
 }
 
 //constructor
-const auto = new Car ('Nissa','GTR',2020);
+const auto = new Car ('Nissan','GTR',2020);
 
 
 console.log( auto instanceof Car);
