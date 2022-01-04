@@ -7,16 +7,19 @@ function Dog(name, color) {
   this.color = "Brown";
   this.numLegs = 4;
 }
+//code here
 let terrier = new Dog("terrier","red"); // constructor
 console.log(Dog)
 
 
 /**another example */
+//define
 class polygon {
   constructor(){
     this.name = "polygon";
   }
 }
+//code here
 const poly1 = new polygon();
 console.log(poly1.name);
 /**end */

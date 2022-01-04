@@ -2,6 +2,7 @@
  * Use constructor to create objects
  */
 
+/** Example */
  function Dog() {
     this.name = "Rupert";
     this.color = "brown";

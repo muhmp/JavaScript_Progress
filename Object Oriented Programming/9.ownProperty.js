@@ -3,6 +3,7 @@
  * checking the parameter using hasOwnProperty
  */
 
+/** example  */
  function Bird(name) {
     this.name = name;
     this.numLegs = 2;
@@ -28,3 +29,9 @@ obj1.property1 = 42;
 //print
 console.log(obj1.hasOwnProperty('property1')); //expected true because the variable specified as it own
 console.log(obj1.hasOwnProperty('toString')); //expected false
+
+/** practice */
+const person1 ={};
+person1.name = "mamet";
+//print
+console.log(person1.hasOwnProperty('name'));
