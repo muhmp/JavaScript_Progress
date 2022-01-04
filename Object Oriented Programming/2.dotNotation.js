@@ -3,7 +3,7 @@
  */
 //example
 let duck = { 
-    name: "Aflac",
+    name: "donald",
     numLegs: 2
   };
   console.log(duck.name);

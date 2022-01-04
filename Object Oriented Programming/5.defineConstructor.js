@@ -1,4 +1,7 @@
-/**example of constructor */
+/**example of defining constructor 
+ * 
+ * 
+*/
 function Dog(name, color) {
   this.name = "Inu";
   this.color = "Brown";
@@ -14,9 +17,10 @@ class polygon {
     this.name = "polygon";
   }
 }
-
 const poly1 = new polygon();
 console.log(poly1.name);
+/**end */
+
 
 
 /**another example */

@@ -3,7 +3,7 @@
  */
 
  let duck = {
-    name: "Aflac",
+    name: "donald",
     numLegs: 2,
     sayName: function() {
       return "The name of this duck is " + this.name + ".";}
