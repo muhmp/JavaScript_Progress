@@ -10,9 +10,9 @@
   /**
    * sum loop
    */
-//define zero
- var sumLoop = 0;
- for (var i=0; i<=10;i++){// 
-   sumLoop += i; //equal to sumloop = sumloop + i
+//define zero variable to sum the total values at the end
+ let sumLoop = 0;
+ for (let i=0; i<=10;i++){// 
+   sumLoop += i; //equal to sumloop = sumloop + i or sumloop = 0 + total values
  }
  console.log(sumLoop);
