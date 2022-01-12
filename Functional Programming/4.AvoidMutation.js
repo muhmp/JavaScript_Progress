@@ -8,4 +8,5 @@ function incrementer() {
   // Only change code above this line  
 }
 var newValue = incrementer(); //5
-console.log(fixedValue)//4
+console.log(fixedValue)//4var anotherValue = incrementer(fixedValue); //equal 5
+console.log(fixedValue)//print 5
