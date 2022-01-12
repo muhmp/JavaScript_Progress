@@ -71,6 +71,7 @@ const Window = function(tabs) {
   Window.prototype.tabClose = function(index){
 
     //define for before and after
+        // Only change code below this line
     const tabsBeforeIndex = this.tabs.splice(0,index) //get the paramater of the index
     const tabsAfterIndex = this.tabs.splice(index+1) //change the value
 
@@ -82,8 +83,9 @@ const Window = function(tabs) {
   //browser part
  
   const workWindow = new Window(['GMail', 'Inbox', 'Work mail', 'Docs', 'freeCodeCamp']); // Your mailbox, drive, and other work sites
-  const socialWindow=;
-  const videoWindow=;
+  const socialWindow = new Window(['FB', 'Gitter', 'Reddit', 'Twitter', 'Medium']); // Social sites
+  const videoWindow = new Window(['Netflix', 'YouTube', 'Vimeo', 'Vine']); // Entertainment sites
+  
 
   const finalTabs = socialWindow.tabOpen().join(videoWindow.tabClose(2)).join(workWindow.tabClose(1).tabOpen());
   console.log(finalTabs.tabs);
