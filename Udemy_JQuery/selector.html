@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JQuery</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+</head>
+
+ <!--try here-->
+ <script>
+    $("document").ready(function(){
+        
+        //61
+        $("#headerNew").append("<h1> I love jQuery</h1>");
+         
+        
+         //62
+         $("h1").css("border", "1px dotted green");
+
+        // apply on the first h1
+         $("h1:first").css("border", "2px dotted red");
+
+
+        //63
+        $("#headerNew").append("<h1> I love jQuery</h1>");
+         
+    })
+</script>
+<body>
+    
+    <h1>i love jQuery 1</h1>
+    <h1>i love jQuery 2</h1>
+    <h1>i love jQuery 3</h1>
+
+
+    <div id="#textBox">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi sapiente ipsam doloremque dolorem minus rem, numquam fugiat dolores esse alias maiores assumenda pariatur id optio corporis, magnam aliquam veniam ea!
+        Labore ut neque nostrum provident ex est reprehenderit. Ratione, natus ipsa. Voluptatum, voluptas. Nostrum expedita distinctio saepe vitae at quod qui eius alias architecto sed. Excepturi voluptatibus magnam esse neque!
+        Alias exercitationem quod, officia ullam natus, maxime cupiditate atque, rem quia expedita quisquam laborum illum iusto nostrum nulla dolor! Nisi, provident eligendi minus illum excepturi autem! Officiis dolores molestiae dicta!
+    </div>
+    
+</body>
+</html>
