@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JQuery</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+   
+
+
+ <!--try here-->
+ <script>
+    $("document").ready(function(){   
+        
+        $("#fade-in").on("click", function(){
+            $("#textBox").fadeIn(3000, function(){
+
+                alert("I'm Done fading in");
+            });
+        });
+
+        $("#fade-out").on("click", function(){
+            $("#textBox").fadeOut("fast", function(){
+
+                alert("I'm Done fading out");
+            });
+        });
+   
+    });
+
+</script>
+
+
+<style>
+    #textBox{
+        display: none;
+    }
+</style>
+
+
+</head>
+    
+ 
+
+<body>
+
+    <a href="#" id="fade-in"></a> | <a href="#" id="fade-out"></a> 
+
+    <div id="textBox">
+        <p class="textCopy">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quisquam, qui magnam, eius inventore ratione quibusdam ullam, odit ut consectetur soluta dolorem voluptate unde animi dolorum quaerat. Neque, reiciendis itaque?
+        Nostrum, enim molestiae impedit nemo officia minima fugit inventore eligendi animi reprehenderit praesentium fuga similique dolor ea porro assumenda et est iusto numquam omnis dolorum ratione autem! Ipsa, voluptas debitis.</p>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad mollitia praesentium, inventore quis natus soluta ducimus perferendis cumque ipsa laboriosam illo ut voluptas nemo quo esse amet ea pariatur facilis.
+        Neque, eius labore accusantium recusandae natus autem quibusdam asperiores aperiam magnam dignissimos excepturi sit minus obcaecati, nihil enim! Saepe, itaque nesciunt maxime dolorem vel tenetur hic eius iure dolore ex?</p>
+    </div>
+
+    
+</body>
+</html>

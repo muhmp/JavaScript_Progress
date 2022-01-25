@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JQuery</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+</head>
+
+ <!--try here-->
+ <script>
+    $("document").ready(function(){   
+      
+        $("#show").on("click", function(){
+            $("#textBox").show();
+        });
+
+        $("#hide").on("click", function(){
+            $("#textBox").hide();
+        });
+        
+   
+    });
+
+</script>
+
+
+    <style>
+    
+        #textBox{
+            display:none;
+        }
+
+    </style>
+    
+
+
+<body>
+    
+    <a href="#" id="show">Click to show</a> | <a href="#" id="hide">Click to hide</a>
+
+    <div id="textBox">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem reprehenderit cumque eveniet neque nesciunt omnis aut, consectetur mollitia magnam quo at fugiat asperiores blanditiis. Modi excepturi aut corporis recusandae hic!
+        Molestias eum animi quas ducimus, tempora ab provident dignissimos exercitationem laborum nemo soluta cupiditate! Accusamus ab dolores corrupti fugit doloremque consequuntur reiciendis necessitatibus, placeat facere rerum adipisci ipsam quasi delectus!
+    </div>
+    
+</body>
+</html>
