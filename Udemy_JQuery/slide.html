@@ -20,6 +20,12 @@
         $("#slide-down").click(function(){
             $("#textBox").slideDown("2000","linear")
         });
+
+        $("#toggleSlide").click(function(){
+            $("#textBox").slideToggle("2000",function(){/*add another function*/
+                alert("Done");
+            });
+        });
     });
 
 </script>
@@ -38,7 +44,7 @@
 
 <body>
 
-    <a href="#" id="fade-in">Fade in</a> | <a href="#" id="fade-out">Fade Out</a> 
+    <a href="#" id="slide-up">Slide Up</a> | <a href="#" id="slide-out">Slide down</a> | <a href="#" id="toggleSlide">Toggle</a>
 
     <div id="textBox">
         <p class="textCopy">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quisquam, qui magnam, eius inventore ratione quibusdam ullam, odit ut consectetur soluta dolorem voluptate unde animi dolorum quaerat. Neque, reiciendis itaque?
