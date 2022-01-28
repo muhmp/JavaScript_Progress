@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JQuery</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+</head>
+
+ <!--try here-->
+ <script>
+    $("document").ready(function(){
+        
+        /* customize the last part of the p */
+        //$("p:last-of-type").css("border","1px solid red");
+
+            /* customize the specific text in p */
+            $("p:contains('jquery')").css("border","1px solid red");
+
+            /* customize the specific text in p */
+            $("p:contains('jquery')").css("border","1px solid red");
+
+            /* customize the specific text in parent of p */
+            //$("p:parent").css("border","1px solid blue");
+
+             /* customize the specific text in p using nth-child */
+             $("p:nth-child(1)").css("border","1px solid red");
+
+            
+
+    });
+</script>
+<body>
+    <div id="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum perferendis accusantium quisquam praesentium similique quibusdam libero, qui enim temporibus sunt totam consectetur, aliquid, reprehenderit dicta. Repudiandae ab voluptas modi.
+        </p>
+        <p>jquery ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum perferendis accusantium quisquam praesentium similique quibusdam libero, qui enim temporibus sunt totam consectetur, aliquid, reprehenderit dicta. Repudiandae ab voluptas modi.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum perferendis accusantium quisquam praesentium similique quibusdam libero, qui enim temporibus sunt totam consectetur, aliquid, reprehenderit dicta. Repudiandae ab voluptas modi.
+        </p>
+    </div>
+
+
+</body>
+</html>
