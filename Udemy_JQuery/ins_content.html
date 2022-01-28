@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JQuery</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+</head>
+
+ <!--try here-->
+ <script>
+    $("document").ready(function(){
+        
+       $("#append").click(function(){
+           $("p:first").append("I just appended some compy!");
+       });
+
+       $("#preppend").click(function(){
+           $("p:last").prepend("I just appended some compy!");
+       });
+       
+    });
+</script>
+<body>
+
+ <a href="#" id="append">Append</a>
+
+ <a href="#" id="preppend">Preppend</a>
+ <div id="container">
+    <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum perferendis accusantium quisquam praesentium similique quibusdam libero, qui enim temporibus sunt totam consectetur, aliquid, reprehenderit dicta. Repudiandae ab voluptas modi.
+    </p>
+    <p>2 jquery ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum perferendis accusantium quisquam praesentium similique quibusdam libero, qui enim temporibus sunt totam consectetur, aliquid, reprehenderit dicta. Repudiandae ab voluptas modi.
+    </p>
+</div>
+
+</body>
+</html>
