@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JQuery</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+</head>
+
+ <!--try here-->
+ <script>
+    $("document").ready(function(){
+        
+     
+    /*customizing specific part of the div part including the p only */
+        //$("div > p ").css("border","1px blue dotted");
+        
+    //customize the fourt part only
+        //$("div > p.fourth-phase").css("border","1px blue dotted");
+    
+    //customize
+        $("#box + ul").css("border","2px solid blue");
+
+    });
+</script>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vel doloribus sapiente ea dolore autem reprehenderit nesciunt consectetur reiciendis eaque quo necessitatibus vitae repellendus, accusamus, nemo aut incidunt eius quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vel doloribus sapiente ea dolore autem reprehenderit nesciunt consectetur reiciendis eaque quo necessitatibus vitae repellendus, accusamus, nemo aut incidunt eius quod.</p>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vel doloribus sapiente ea dolore autem reprehenderit nesciunt consectetur reiciendis eaque quo necessitatibus vitae repellendus, accusamus, nemo aut incidunt eius quod.</p>
+        <p class="fourth-phase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vel doloribus sapiente ea dolore autem reprehenderit nesciunt consectetur reiciendis eaque quo necessitatibus vitae repellendus, accusamus, nemo aut incidunt eius quod.</p>            
+    </div>
+
+    <div id="box">   
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vel doloribus sapiente ea dolore autem reprehenderit nesciunt consectetur reiciendis eaque quo necessitatibus vitae repellendus, accusamus, nemo aut incidunt eius quod.</p>
+        <p class="last">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vel doloribus sapiente ea dolore autem reprehenderit nesciunt consectetur reiciendis eaque quo necessitatibus vitae repellendus, accusamus, nemo aut incidunt eius quod.</p>
+    </div>
+
+
+    <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">home</a></li>
+        <li><a href="">home</a></li>
+        <li><a href="">home</a></li>
+        <li><a href="">home</a></li>
+    </ul>
+
+
+</body>
+</html>
