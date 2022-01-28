@@ -13,19 +13,10 @@
  <script>
     $("document").ready(function(){   
         
-        $("#slide-up").click(function(){
-            $("#textBox").slideUp("2000","linear")
+        $("#toggleMe").click(function(){
+            $("#textBox").toggle(4000, "swing")
         });
-
-        $("#slide-down").click(function(){
-            $("#textBox").slideDown("2000","linear")
-        });
-
-        $("#toggleSlide").click(function(){
-            $("#textBox").slideToggle("2000",function(){/*add another function*/
-                alert("Done");
-            });
-        });
+        
     });
 
 </script>
@@ -44,10 +35,10 @@
 
 <body>
 
-    <a href="#" id="slide-up">Slide Up</a> | <a href="#" id="slide-down">Slide down</a> | <a href="#" id="toggleSlide">Toggle</a>
+    <a href="#" id="toggleMe">Toggle</a>
 
     <div id="textBox">
-        <p class="textCopy">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quisquam, qui magnam, eius inventore ratione quibusdam ullam, odit ut consectetur soluta dolorem voluptate unde animi dolorum quaerat. Neque, reiciendis itaque?
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quisquam, qui magnam, eius inventore ratione quibusdam ullam, odit ut consectetur soluta dolorem voluptate unde animi dolorum quaerat. Neque, reiciendis itaque?
         Nostrum, enim molestiae impedit nemo officia minima fugit inventore eligendi animi reprehenderit praesentium fuga similique dolor ea porro assumenda et est iusto numquam omnis dolorum ratione autem! Ipsa, voluptas debitis.</p>
 
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad mollitia praesentium, inventore quis natus soluta ducimus perferendis cumque ipsa laboriosam illo ut voluptas nemo quo esse amet ea pariatur facilis.

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JQuery</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+   
+
+
+ <!--try here-->
+ <script>
+    $("document").ready(function(){ 
+        /* grow animation */  
+        $("#grow").click(function(){
+            $("#textBox").animate({width:"500px"},1000);
+        });
+
+        /* move animation */
+        $("#move").click(function(){
+            $("#textBox").animate({marginLeft:"200px"},1000);
+        });
+
+
+        /* bigger animation */
+        $("#bigger").click(function(){
+            $("#textBox").animate({fontSize:"40px"},3000) ;
+        });
+
+        /* many */
+        $("#many").click(function(){
+            $("#textBox").animate({fontSize:"40px", marginLeft:"400px", width:"100px"},2000);
+        });
+
+    });
+
+</script>
+
+
+<style>
+    #textBox{
+        width: 200px;
+        height: 200px;
+        background-color: #ccc;
+        position: absolute;
+        margin-top: 20px;
+    }
+</style>
+
+
+</head>
+    
+ 
+
+<body>
+
+
+    <a href="#" id="grow">Grow</a> | <a href="#" id="move">Move</a> | <a href="#" id="bigger">Bigger</a> | <a href="#" id="many">Many Things</a>
+
+    <div id="textBox">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quisquam, qui magnam, eius inventore ratione quibusdam ullam, odit ut consectetur soluta dolorem voluptate unde animi dolorum quaerat. Neque, reiciendis itaque?
+        Nostrum, enim molestiae impedit nemo officia </p>
+    </div>
+
+    
+</body>
+</html>
