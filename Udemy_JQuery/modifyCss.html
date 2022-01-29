@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JQuery</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+</head>
+
+ <!--try here-->
+ <script>
+    $("document").ready(function(){
+       
+    /* customize the first attribute */
+    $("#add-class").click(function(){
+        $("p:first").addClass('color');
+    });
+
+
+    /* customize the first attribute */
+    $("#remove-class").click(function(){
+        $("p:first").removeClass('color');
+    });
+
+
+    /* addClass method */
+    $("#toggle-class").click(function(){
+        $("p:first").toggleClass('color');
+    });
+
+
+    /* customize the first attribute */
+    $("#increase-class").click(function(){
+        $("p:first").css("font-size","1+=px");//increment
+    });
+
+
+
+       });
+</script>
+
+<style>
+    .colorBox{
+        color:#00D8FF
+    }
+</style>
+
+<body>
+
+    <a href="#" id="add-class">Add class</a>
+    <a href="#" id="remove-class">Remove class</a>
+    <a href="#" id="toggle-class">Toggle class</a>
+    <a href="#" id="increase-class">Increase class</a>
+    
+
+    <div id="container">
+        <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum perferendis accusantium quisquam praesentium similique quibusdam libero, qui enim temporibus sunt totam consectetur, aliquid, reprehenderit dicta. Repudiandae ab voluptas modi.
+        </p>
+        <p>2 jquery ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum perferendis accusantium quisquam praesentium similique quibusdam libero, qui enim temporibus sunt totam consectetur, aliquid, reprehenderit dicta. Repudiandae ab voluptas modi.
+        </p>
+        <p>3 jquery ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum perferendis accusantium quisquam praesentium similique quibusdam libero, qui enim temporibus sunt totam consectetur, aliquid, reprehenderit dicta. Repudiandae ab voluptas modi.
+        </p>
+        <p>4 jquery ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum perferendis accusantium quisquam praesentium similique quibusdam libero, qui enim temporibus sunt totam consectetur, aliquid, reprehenderit dicta. Repudiandae ab voluptas modi.
+        </p>
+    </div>
+
+</body>
+</html>
