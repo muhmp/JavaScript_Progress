@@ -7,6 +7,8 @@
     console.log(ArrLoop[j]);
   }
 
+
+  /** 
   /**
    * sum loop
    */
