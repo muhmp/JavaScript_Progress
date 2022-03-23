@@ -2,8 +2,8 @@
  * Use the map Method to Extract Data from an Array
  */
 
-// The global variable
-const arr = [{"Name": "Mamet", "Born": 1995}];
+// example global variable
+// const arr = [{"Name": "Bob", "Born": 1995}];
 
 
 const watchList = [
@@ -134,9 +134,21 @@ const watchList = [
     score: item["Metascore"]
   }));
 
+  function ifMovieExist(){
+    //for watchlist is exist inside ratings array return true
+    for (let i = 0; i < ratings.length; i++) {
+      //if all movie title is exist inside watchlist return true
+      if (watchList.find(item => item["Title"] === ratings[i]["title"])) {
+        return true;
+      }
+    }
+  }
+
+  /**
   const bio = arr.map(item => ({
     name: item["Name"], born: item["Born"]
   }));
+   */
 
 /**Solution 2 using es6
   //solution 2 : using es6
@@ -152,5 +164,6 @@ const watchList = [
   // Only change code above this line
   
   console.log(JSON.stringify(ratings));
+  console.log(ifMovieExist());
 
-  console.log(JSON.stringify(bio));
+  //console.log(JSON.stringify(bio));
